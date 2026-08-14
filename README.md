@@ -3,7 +3,7 @@
 2. cd todox-with-docker/
 3. cd backend/
 4. copy .env.example to .env
-5. cd ../todox-with-docker/
+5. cd ../
 6. run CMD: docker compose up
 
 * How to setup run source by node
