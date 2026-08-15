@@ -1,4 +1,4 @@
-* How to setup run source by docker
+## How to setup run source by docker
 
 1. download docker
 
@@ -12,7 +12,7 @@
 
 6. run CMD: docker compose up
 
-* How to setup run source by node
+## How to setup run source by node
 
 1. download nodejs
 
@@ -32,7 +32,7 @@
 
     4.2 npm run dev
 
-* How to deloy source up VPS Ubuntu/Linux
+## How to deloy source up VPS Ubuntu/Linux
   
 1. Dùng lệnh ssh root@dia_chi_vps_cua_ban để kết nối vào VPS
 
