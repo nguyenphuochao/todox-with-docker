@@ -15,6 +15,8 @@ const app = express();
 // middlewares
 app.use(express.json());
 
+app.use(cors());
+
 if (process.env.NODE_ENV !== "production") {
   app.use(cors({ origin: "http://localhost:5173" }));
 }
