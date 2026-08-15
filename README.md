@@ -32,3 +32,19 @@
 
     4.2 npm run dev
 
+* How to deloy source up VPS Ubuntu/Linux
+  
+1. Dùng lệnh ssh root@dia_chi_vps_cua_ban để kết nối vào VPS
+
+2. Cập nhật hệ thống và cài đặt môi trường:
+   sudo apt update && sudo apt upgrade -y
+   sudo apt install docker.io docker-compose-v2 -y
+
+3. Kiểm tra docker sau khi cài: docker --version
+
+4. git clone <url_repository_cua_ban>
+
+5. cd <ten_thu_muc_source>
+
+6. Chạy lệnh: docker compose up -d --build
+
