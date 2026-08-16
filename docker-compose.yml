@@ -1,25 +1,14 @@
 services:
   backend:
-    build: ./backend
-    container_name: docker-backend
+    image: haonpdev/docker-demo-backend:latest
     ports:
       - '8000:8000'
-    environment:
-      - PORT=8000
-    env_file: 
-      - ./backend/.env
-    volumes:
-      - ./backend:/app
-      - /app/node_modules
-    command: npm run dev
+    env_file:
+      - .env
 
   frontend:
-    build: ./frontend
-    container_name: docker-frontend
+    image: haonpdev/docker-demo-frontend:latest
     ports:
-      - '5173:5173'
+      - '80:80'
     depends_on: 
       - backend
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
