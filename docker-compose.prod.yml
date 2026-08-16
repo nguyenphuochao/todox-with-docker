@@ -3,29 +3,17 @@ services:
     build: 
       context: ./backend
       dockerfile: Dockerfile.prod
-    container_name: docker-backend
-    ports:
-      - '8000:8000'
-    environment:
-      - PORT=8000
-      - NODE_ENV=production
+    image: haonpdev/docker-demo-backend:latest
     env_file:
       - .env
-    networks:
-      - app-network
+    ports:
+      - '8000:8000'
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile.prod
-    container_name: docker-frontend
+    image: haonpdev/docker-demo-frontend:latest
     ports:
       - '80:80'
-    depends_on: 
-      - backend
-    networks:
-      - app-network
 
-networks:
-  app-network:
-    driver: bridge
