@@ -3,7 +3,7 @@ name: Deploy to Docker Hub
 on:
   push:
     branches:
-      - master
+      - refactor/docker-hub-image
 
 jobs:
   build-and-push:
