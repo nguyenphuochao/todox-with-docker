@@ -4,6 +4,4 @@
 
 2. cd todox-with-docker/
 
-3. login docker
-
-4. run CMD: docker compose up --build -d
+3. run CMD: docker compose up --build -d
